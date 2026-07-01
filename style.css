@@ -2,66 +2,103 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial Black', Arial, sans-serif;
 }
 
 body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  text-align: center;
+  background: #050505;
+  color: #eaffea;
+  overflow-x: hidden;
 }
 
-header {
-  padding: 80px 20px;
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
 }
 
-header h1 {
-  font-size: 3rem;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
 }
 
-header p {
-  margin: 15px 0;
-  font-size: 1.2rem;
+.hero-text h1 {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.hero-text span {
+  color: #00ff99;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  opacity: 0.9;
+}
+
+.buttons {
+  margin: 20px 0;
 }
 
 .btn {
-  display: inline-block;
   padding: 12px 25px;
-  background: #00ff9c;
-  color: #000;
+  border-radius: 30px;
   text-decoration: none;
-  border-radius: 30px;
+  margin-right: 10px;
   font-weight: bold;
 }
 
-section {
-  padding: 60px 20px;
+.green {
+  background: #00ff99;
+  color: #000;
 }
 
-h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
+.outline {
+  border: 2px solid #00ff99;
+  color: #00ff99;
 }
 
-ul, ol {
-  list-style: none;
+.socials a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #00ff99;
+  text-decoration: none;
 }
 
-li {
-  margin: 10px 0;
+.hero-image img {
+  width: 350px;
+  filter: drop-shadow(0 0 20px #00ff99);
 }
 
-.buy button {
-  padding: 12px 25px;
-  background: #ffcc00;
+.card {
+  background: rgba(0,0,0,0.7);
+  border: 1px solid #00ff99;
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+  padding: 0 10%;
+}
+
+button {
+  background: #00ff99;
   border: none;
+  padding: 12px 25px;
   border-radius: 30px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
 
 footer {
-  padding: 30px;
-  font-size: 0.9rem;
-  opacity: 0.7;
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
 }
