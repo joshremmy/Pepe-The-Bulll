@@ -2,60 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pepe the Bull 🐂</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>🐂 Pepe the Bull</h1>
+<!-- Animated Chart Background -->
+<canvas id="chart"></canvas>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1>PEPE<br><span>THE BULL</span></h1>
     <p>The Meme That Charges the Market</p>
-    <a href="#buy" class="btn">Buy $BULL</a>
-  </header>
 
-  <section class="about">
-    <h2>About</h2>
-    <p>
-      Pepe the Bull is the ultimate meme-powered bull market symbol.
-      No utility. No roadmap. Just vibes, memes, and pure bullish energy.
-    </p>
-  </section>
+    <div class="buttons">
+      <a href="#buy" class="btn green">Buy $BULL</a>
+      <a href="#" class="btn outline">Chart</a>
+    </div>
 
-  <section class="tokenomics">
+    <div class="socials">
+      <a href="https://twitter.com/YOURHANDLE" target="_blank">🐦 Twitter</a>
+      <a href="https://t.me/YOURGROUP" target="_blank">✈️ Telegram</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="bull.png" alt="Pepe the Bull">
+  </div>
+</header>
+
+<section class="card">
+  <h2>About</h2>
+  <p>
+    Pepe the Bull represents pure up-only meme energy.
+    No utility. No roadmap. Just bulls, memes, and vibes.
+  </p>
+</section>
+
+<section class="grid">
+  <div class="card">
     <h2>Tokenomics</h2>
     <ul>
-      <li>🐂 Total Supply: 1,000,000,000</li>
-      <li>🔥 Liquidity: Burned</li>
-      <li>🔒 Ownership: Renounced</li>
-      <li>💎 Taxes: 0%</li>
+      <li>Total Supply: 1,000,000,000</li>
+      <li>Liquidity: Burned 🔥</li>
+      <li>Ownership: Renounced 🔒</li>
+      <li>Taxes: 0%</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="roadmap">
+  <div class="card">
     <h2>Roadmap</h2>
     <ol>
-      <li>Phase 1: Meme</li>
-      <li>Phase 2: Community</li>
-      <li>Phase 3: Bull Run</li>
+      <li>Meme</li>
+      <li>Community</li>
+      <li>Bull Run</li>
     </ol>
-  </section>
+  </div>
+</section>
 
-  <section id="buy" class="buy">
-    <h2>How to Buy</h2>
-    <p>
-      1. Install a crypto wallet  
-      <br/>2. Load ETH / SOL / BNB  
-      <br/>3. Swap for <strong>$BULL</strong>  
-    </p>
-    <button onclick="copyAddress()">Copy Contract Address</button>
-    <p id="copied"></p>
-  </section>
+<section id="buy" class="card">
+  <h2>How to Buy</h2>
+  <p>
+    1. Install wallet<br>
+    2. Load ETH / SOL / BNB<br>
+    3. Swap for <strong>$BULL</strong>
+  </p>
+  <button onclick="copy()">Copy Contract</button>
+  <p id="msg"></p>
+</section>
 
-  <footer>
-    <p>© 2026 Pepe the Bull — This is a meme coin, not financial advice.</p>
-  </footer>
+<footer>
+  © 2026 Pepe the Bull — Meme coin only. Not financial advice.
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
